@@ -36,7 +36,7 @@ class PostgresConnection:
 
 	def create_table(self, table_name:str, colums:dict) -> None:
 		"""
-			Method to list create a table
+			Method to create a table
 		"""
 		s = f"""CREATE TABLE IF NOT EXISTS {table_name}"""
 		s+="("
