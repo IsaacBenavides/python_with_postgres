@@ -6,14 +6,16 @@ load_dotenv()
 
 class PostgresConnection:
 	"""
-	Connect python with postgres.
-
+	Connect python with postgresql.
+	
 	This class can 
-	create table in database,
-	list tables in database,
-	list all columns from a table,
-	list all values from a table
+	create a table in the database,
+	list tables in the database,
+	list all columns of a table,
+	list all values of a table
 	"""
+
+
 	def __init__(self):
 		self.t_host = "postgres"
 		self.t_port = os.getenv("POSTGRES_PORT")
